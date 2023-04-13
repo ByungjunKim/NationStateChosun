@@ -1,0 +1,67 @@
+---
+title: "trend_test"
+format: html
+editor: visual
+---
+
+## Word Embedding 유사도 시계열 검정
+
+```{r}
+library(tidyverse)
+library(trend)
+library(readxl)
+```
+
+```{r}
+df <- read_xlsx('./results/연도별_민족_국민_국가.xlsx')
+df
+```
+
+민족 - 국가
+
+```{r}
+# MK 검정 결과 경향성 없음 (귀무가설 채택)
+mk.test(df$`민족-국가`)
+```
+
+국민 - 국가
+
+```{r}
+# z(검정통계량) 음수 이므로 하강하는 경향이 있음***
+mk.test(df$`국민-국가`) 
+```
+
+```{r}
+# 변동점 탐색
+pettitt.test(df$`국민-국가`)
+df$연도[pettitt.test(df$`국민-국가`)$estimate]
+```
+
+```{r}
+sens.slope(df$`국민-국가`[1:10-1])
+```
+
+```{r}
+sens.slope(df$`국민-국가`[11:21])
+```
+
+민족-국민
+
+```{r}
+# z(검정통계량) 음수 이므로 하강하는 경향이 있음**
+mk.test(df$`민족-국민`)
+```
+
+```{r}
+# 변동점 탐색
+pettitt.test(df$`민족-국민`)
+df$연도[pettitt.test(df$`민족-국민`)$estimate]
+```
+
+```{r}
+sens.slope(df$`민족-국민`[1:7])
+```
+
+```{r}
+sens.slope(df$`민족-국민`[9:21])
+```
