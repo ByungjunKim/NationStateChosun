@@ -13,7 +13,7 @@ library(readxl)
 ```
 
 ```{r}
-df <- read_xlsx('./연도별_민족_국민_국가.xlsx')
+df <- read_xlsx('./data/연도별_민족_국민_국가.xlsx')
 df
 ```
 
