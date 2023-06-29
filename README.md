@@ -9,3 +9,6 @@ data 폴더에 분석에 필요한 파일 저장. 용량 문제로 조선일보 
 * DBE.ipynb : 데이터 전처리 과정 및 시계열 워드 임베딩 학습 python 코드
 * DBE_Analysis.ipynb : 시계열 워드 임베딩 학습 결과 기반 분석 python 코드. 분석 결과는 results 폴더에 있음.
 * trend_test.qmd(html) : 추세 검정 R 코드
+
+### 3. 시계열 워드 임베딩 결과
+[연도별 민족, 국민, 국가 유사어](https://docs.google.com/spreadsheets/d/1kG-WOK1Wy7gPL-VERNrIctCk28DwFTQ1qIeet_U21tk/edit?usp=sharing)
