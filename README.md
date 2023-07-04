@@ -16,5 +16,5 @@ data 폴더에 분석에 필요한 파일 저장. 용량 문제로 조선일보 
 [연도별 민족, 국민, 국가 유사어](https://docs.google.com/spreadsheets/d/1kG-WOK1Wy7gPL-VERNrIctCk28DwFTQ1qIeet_U21tk/edit?usp=sharing)
 
 ### 4. 저자
-김병준(KAIST 디지털인문사회과학센터 연구조교수)
-전봉관(KAIST 디지털인문사회과학부 교수)
+* 김병준(KAIST 디지털인문사회과학센터 연구조교수)
+* 전봉관(KAIST 디지털인문사회과학부 교수)
